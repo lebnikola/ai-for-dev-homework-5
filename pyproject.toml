@@ -1,0 +1,12 @@
+[project]
+name = "bazhov-mcp"
+version = "0.1.0"
+description = "MCP-справочник по сказам Бажова: герои, места, годы"
+requires-python = ">=3.10"
+dependencies = ["mcp[cli]>=2.2"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

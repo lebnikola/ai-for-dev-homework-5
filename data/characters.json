@@ -1,0 +1,228 @@
+[
+  {
+    "id": "char:khozyayka-mednoy-gory",
+    "type": "character",
+    "title": "Хозяйка Медной горы",
+    "aliases": ["Малахитница", "горная хозяйка", "хозяйка горы", "горная девица"],
+    "description": "Покровительница горняков и хранительница секретов мастерства: сизо-чёрная коса, платье из шёлкового малахита. Испытывает людей, карает жадных (приказчик Северьян), помогает мастерам.",
+    "stories": [
+      "story:mednoy-gory-khozyayka",
+      "story:prikazchikovy-podoshvy",
+      "story:sochnevy-kameshki",
+      "story:malakhitovaya-shkatulka",
+      "story:kamenny-tsvetok",
+      "story:gornyi-master",
+      "story:hrupkaya-vetochka",
+      "story:dve-yashcharki",
+      "story:tayutkino-zerkalitse"
+    ]
+  },
+  {
+    "id": "char:stepan",
+    "type": "character",
+    "title": "Степан",
+    "aliases": ["Степка"],
+    "description": "Заводской паренёк, встреченный Хозяйкой Медной горы; честно признался ей о невесте и получил волю и малахитовую шкатулку для Настасьи.",
+    "stories": ["story:mednoy-gory-khozyayka", "story:malakhitovaya-shkatulka"]
+  },
+  {
+    "id": "char:nastasya",
+    "type": "character",
+    "title": "Настасья",
+    "aliases": ["Настёна"],
+    "description": "Невеста Степана, позже вдова, хранительница малахитовой шкатулки.",
+    "stories": ["story:mednoy-gory-khozyayka", "story:malakhitovaya-shkatulka"]
+  },
+  {
+    "id": "char:tanyushka",
+    "type": "character",
+    "title": "Танюшка",
+    "aliases": ["Танюшка-мастерица"],
+    "description": "Дочь Степана и Настасьи; странница (Хозяйка) научила её рукоделию и подарила памятку, после чего Танюшка стала мастерицей.",
+    "stories": ["story:malakhitovaya-shkatulka"]
+  },
+  {
+    "id": "char:severyan-kondratich",
+    "type": "character",
+    "title": "Северьян Кондратьич",
+    "aliases": ["Северьян Убойца", "Северьянко"],
+    "description": "Лютый приказчик с плёткой и обережными; захотел поймать Хозяйку и обратился в пустую малахитовую глыбу.",
+    "stories": ["story:prikazchikovy-podoshvy"]
+  },
+  {
+    "id": "char:vanka-sochen",
+    "type": "character",
+    "title": "Ванька Сочень",
+    "aliases": ["Сочень"],
+    "description": "Конторский «нюхалка-наушник», позарившийся на медные изумруды Красногорки; Хозяйка дала ему камешков и наказала за алчность.",
+    "stories": ["story:sochnevy-kameshki"]
+  },
+  {
+    "id": "char:velikiy-poloz",
+    "type": "character",
+    "title": "Великий Полоз",
+    "aliases": ["Полоз"],
+    "description": "Змеиный дух, хозяин реки Чусовой и её богатств.",
+    "stories": ["story:pro-velikogo-polozha"]
+  },
+  {
+    "id": "char:danila-master",
+    "type": "character",
+    "title": "Данила-мастер",
+    "aliases": ["Данила-Недокормыш", "Данилушко"],
+    "description": "Талантливый камнерез, ученик Прокопьича; ушёл к Хозяйке за каменным цветком, но в «Горном мастере» вернулся к людям и Катерине. Прототип — горщик Данила Зверев.",
+    "stories": ["story:kamenny-tsvetok", "story:gornyi-master", "story:hrupkaya-vetochka"]
+  },
+  {
+    "id": "char:katerina",
+    "type": "character",
+    "title": "Катерина",
+    "aliases": ["Катя"],
+    "description": "Невеста, а затем жена Данилы-мастера; переняла ремесло Прокопьича и сама стала искать камни.",
+    "stories": ["story:kamenny-tsvetok", "story:gornyi-master", "story:hrupkaya-vetochka"]
+  },
+  {
+    "id": "char:prokopich",
+    "type": "character",
+    "title": "Прокопьич",
+    "aliases": ["мастер Прокопьич"],
+    "description": "Старый мастер-камнерез, наставник Данилы; прототип — Самоил Прокофьич.",
+    "stories": ["story:kamenny-tsvetok", "story:gornyi-master"]
+  },
+  {
+    "id": "char:mitya",
+    "type": "character",
+    "title": "Митька",
+    "aliases": ["Митянька", "горбатенький Митя"],
+    "description": "Третий сын Данилы и Катерины, горбатенький; научился делать «каменную ягоду» и создал хрупкую веточку из змеевика.",
+    "stories": ["story:hrupkaya-vetochka"]
+  },
+  {
+    "id": "char:andryuha-solony",
+    "type": "character",
+    "title": "Андрюха Солёный",
+    "aliases": ["Андрюха"],
+    "description": "Гумешевский работник, попавший на каторжные работы за спор с начальством; Хозяйка ящеркой вывела его на свободу.",
+    "stories": ["story:dve-yashcharki"]
+  },
+  {
+    "id": "char:ilya",
+    "type": "character",
+    "title": "Илья",
+    "aliases": [],
+    "description": "Заводской парень, набредший на Синюшкин колодец; богатства ему были не нужны.",
+    "stories": ["story:sinyushkin-kolodets"]
+  },
+  {
+    "id": "char:babka-sinyushka",
+    "type": "character",
+    "title": "Бабка Синюшка",
+    "aliases": ["Синюшка"],
+    "description": "Хозяйка лесного колодца: то старушонка в синем, то девица-красавица; искушает богатством.",
+    "stories": ["story:sinyushkin-kolodets"]
+  },
+  {
+    "id": "char:fedunka",
+    "type": "character",
+    "title": "Федюнька",
+    "aliases": ["Федюня"],
+    "description": "Восьмилетний мальчик из артели старателей, единственный, кому Огневушка отдала лопатку.",
+    "stories": ["story:ognevushka-poskakushka"]
+  },
+  {
+    "id": "char:ognevushka-poskakushka",
+    "type": "character",
+    "title": "Огневушка-Поскакушка",
+    "aliases": ["Поскакушка"],
+    "description": "Пляшущий огонёк из серёдка костра: показывает золото, но часто водит людей за нос.",
+    "stories": ["story:ognevushka-poskakushka"]
+  },
+  {
+    "id": "char:yashka-zorko",
+    "type": "character",
+    "title": "Яшка Зорко",
+    "aliases": ["Яшко Зорко Облезлый", "Зорко"],
+    "description": "Щегарь у турчаниновских, сватавшийся к Усте и искавший путь к малахиту.",
+    "stories": ["story:traavyanaya-zapadyonka"]
+  },
+  {
+    "id": "char:ustya-solovishna",
+    "type": "character",
+    "title": "Устя Соловишна",
+    "aliases": ["Устя", "Устка"],
+    "description": "Дочь вдовы Шаврихи; знала про травяную западёнку у берёзы близ Климинского рудника.",
+    "stories": ["story:traavyanaya-zapadyonka"]
+  },
+  {
+    "id": "char:shavrikha",
+    "type": "character",
+    "title": "Шавриха",
+    "aliases": [],
+    "description": "Вдова, по слухам знавшая, где открытая ямка с малахитом.",
+    "stories": ["story:traavyanaya-zapadyonka"]
+  },
+  {
+    "id": "char:ganya-zarya",
+    "type": "character",
+    "title": "Ганя Заря",
+    "aliases": [],
+    "description": "Горняк, которому приказали идти в проблемный забой; дочка Таютка пошла с ним.",
+    "stories": ["story:tayutkino-zerkalitse"]
+  },
+  {
+    "id": "char:tayutka",
+    "type": "character",
+    "title": "Таютка",
+    "aliases": ["Таюткино зеркальце"],
+    "description": "Дочка Гани Зари, с малых лет бывавшая в шахте; нашла разбитое зеркало Хозяйки и отвела от людей обвал.",
+    "stories": ["story:tayutkino-zerkalitse"]
+  },
+  {
+    "id": "char:kokovanya",
+    "type": "character",
+    "title": "Кокованя",
+    "aliases": ["дед Кокованя"],
+    "description": "Старик-камнерез с уральского завода: летом промывает песок и добывает золото, зимой охотится на козлов.",
+    "stories": ["story:serebryanoe-kopyttse"]
+  },
+  {
+    "id": "char:darenka",
+    "type": "character",
+    "title": "Дарёнка",
+    "aliases": ["Дарёнка Потопаева"],
+    "description": "Осиротевшая девочка, взятая Кокованей на воспитание; всей душой захотела увидеть Серебряное копытце.",
+    "stories": ["story:serebryanoe-kopyttse"]
+  },
+  {
+    "id": "char:muryonka",
+    "type": "character",
+    "title": "Мурёнка",
+    "aliases": ["кошка Мурёнка"],
+    "description": "Кошка, привязавшаяся к Дарёнке; одним мяуканьем спугнула Серебряное копытце.",
+    "stories": ["story:serebryanoe-kopyttse"]
+  },
+  {
+    "id": "char:serebryanoe-kopyttse",
+    "type": "character",
+    "title": "Серебряное копытце",
+    "aliases": ["волшебный козёл"],
+    "description": "Особенный козёл с серебряным копытцем на правой передней ноге: где топнет — там вырастают самоцветы.",
+    "stories": ["story:serebryanoe-kopyttse"]
+  },
+  {
+    "id": "char:evlampy-zhelezko",
+    "type": "character",
+    "title": "Евлампий Медведев",
+    "aliases": ["Железко", "Евламка"],
+    "description": "Гуменский самородок-камнерез, прозванный Железком за твёрдость характера; хранил лучшие малахитовые камни.",
+    "stories": ["story:zhelezkovy-pokryshki"]
+  },
+  {
+    "id": "char:faberge",
+    "type": "character",
+    "title": "Фаберже",
+    "aliases": ["француз Фабержей"],
+    "description": "Поставщик двора, искавший подарок для государыни без красного цвета — и потому обратившийся к малахиту.",
+    "stories": ["story:zhelezkovy-pokryshki"]
+  }
+]

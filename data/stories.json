@@ -1,0 +1,199 @@
+[
+  {
+    "id": "story:mednoy-gory-khozyayka",
+    "type": "story",
+    "title": "Медной горы Хозяйка",
+    "year": 1936,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Заводской паренёк Степан встретил Хозяйку Медной горы, выполнил её приказ уйти с Красногорского рудника, пострадал от приказчика и был спасён Малахитницей, которая отпустила его к невесте Настене.",
+    "motifs": ["малахит", "хозяйка горы", "рудник", "воля", "испытание"],
+    "characters": [
+      "char:khozyayka-mednoy-gory",
+      "char:stepan",
+      "char:nastasya"
+    ],
+    "places": ["place:mednaya-gora", "place:krasnogorsky-rudnik"]
+  },
+  {
+    "id": "story:prikazchikovy-podoshvy",
+    "type": "story",
+    "title": "Приказчиковы подошвы",
+    "year": 1936,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Лютый приказчик Северьян Кондратьич захотел поймать Хозяйку Медной горы, но она превратила его в пустую малахитовую глыбу.",
+    "motifs": ["жадность", "наказание", "малахит", "приказчик"],
+    "characters": [
+      "char:khozyayka-mednoy-gory",
+      "char:severyan-kondratich"
+    ],
+    "places": ["place:mednaya-gora"]
+  },
+  {
+    "id": "story:pro-velikogo-polozha",
+    "type": "story",
+    "title": "Про Великого Полоза",
+    "year": 1936,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Сказ о хозяине реки Чусовой — змеином духе Великом Полозе, который хранит речные богатства и играет с людьми.",
+    "motifs": ["водяной дух", "река", "богатство", "Чусовая"],
+    "characters": ["char:velikiy-poloz"],
+    "places": ["place:chusovaya-river"]
+  },
+  {
+    "id": "story:sochnevy-kameshki",
+    "type": "story",
+    "title": "Сочневы камешки",
+    "year": 1937,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Конторский служащий Ванька Сочень захотел найти медные изумруды на Красногорке; после встречи с чёрной кошкой и советов бабки Колесишки он встретил Хозяйку, которая наказала его за алчность.",
+    "motifs": ["медные изумруды", "самоцветы", "жадность", "чёрная кошка"],
+    "characters": ["char:vanka-sochen", "char:khozyayka-mednoy-gory"],
+    "places": ["place:krasnogorsky-rudnik", "place:mednaya-gora"]
+  },
+  {
+    "id": "story:malakhitovaya-shkatulka",
+    "type": "story",
+    "title": "Малахитовая шкатулка",
+    "year": 1938,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Вдова Настасья и дочь Танюшка хранят малахитовую шкатулку Степана; странница учит Танюшку рукоделию и дарит памятку, а позже шкатулка попадает к молодому барину.",
+    "motifs": ["малахит", "памятка", "рукоделие", "самородки"],
+    "characters": [
+      "char:stepan",
+      "char:nastasya",
+      "char:tanyushka",
+      "char:khozyayka-mednoy-gory"
+    ],
+    "places": []
+  },
+  {
+    "id": "story:kamenny-tsvetok",
+    "type": "story",
+    "title": "Каменный цветок",
+    "year": 1938,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Данила-Недокормыш учится у мастера Прокопьича, не может сделать чашу по чертежу и слышит о каменном цветке у Хозяйки Медной горы — ради него он уходит из людей.",
+    "motifs": ["каменный цветок", "камнерезное мастерство", "малахит", "самородки"],
+    "characters": [
+      "char:danila-master",
+      "char:katerina",
+      "char:prokopich",
+      "char:khozyayka-mednoy-gory"
+    ],
+    "places": ["place:mednaya-gora"]
+  },
+  {
+    "id": "story:gornyi-master",
+    "type": "story",
+    "title": "Горный мастер",
+    "year": 1939,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Катерина, невеста ушедшего к Хозяйке Данилы, сама становится мастерицей; Хозяйка устраивает встречу и ставит Данилу перед выбором — остаться в горах или вернуться к людям.",
+    "motifs": ["выбор", "мастерство", "малахит", "возвращение к людям"],
+    "characters": [
+      "char:danila-master",
+      "char:katerina",
+      "char:prokopich",
+      "char:khozyayka-mednoy-gory"
+    ],
+    "places": ["place:mednaya-gora"]
+  },
+  {
+    "id": "story:hrupkaya-vetochka",
+    "type": "story",
+    "title": "Хрупкая веточка",
+    "year": 1940,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Горбатенький Митька, сын Данилы и Катерины, учится у горного мастера и создаёт каменную веточку из дешёвого камня — подсказанную горной девицей.",
+    "motifs": ["каменная веточка", "змеевик", "мастерство", "самородки"],
+    "characters": [
+      "char:mitya",
+      "char:danila-master",
+      "char:katerina",
+      "char:khozyayka-mednoy-gory"
+    ],
+    "places": ["place:mednaya-gora"]
+  },
+  {
+    "id": "story:dve-yashcharki",
+    "type": "story",
+    "title": "Две ящерки",
+    "year": 1939,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Гумешевский работник Андрюха Солёный не поладил с начальством и попал на каторжные работы; Хозяйка Медной горы ящеркой вывела его на свободу.",
+    "motifs": ["ящерки", "каторга", "турчаниновские заводы", "спасение"],
+    "characters": ["char:andryuha-solony", "char:khozyayka-mednoy-gory"],
+    "places": ["place:gumushevsky-rudnik", "place:mednaya-gora"]
+  },
+  {
+    "id": "story:sinyushkin-kolodets",
+    "type": "story",
+    "title": "Синюшкин колодец",
+    "year": 1939,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Заводской парень Илья набрёл на лесной колодец, где живёт бабка Синюшка; она сулит богатства, но Ильё важнее увидеть, как она оборачивается красной девкой.",
+    "motifs": ["богатство-искушение", "лесной колодец", "синий цвет"],
+    "characters": ["char:ilya", "char:babka-sinyushka"],
+    "places": ["place:sinyushkin-well"]
+  },
+  {
+    "id": "story:ognevushka-poskakushka",
+    "type": "story",
+    "title": "Огневушка-поскакушка",
+    "year": 1940,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Мальчик Федюнька из артели старателей видит Огневушку-Поскакушку — пляшущее пламя, которое показывает золото; однажды она спасает Федюньку в зимнем лесу.",
+    "motifs": ["золото", "старательская артель", "пляшущий огонёк", "лес"],
+    "characters": ["char:fedunka", "char:ognevushka-poskakushka"],
+    "places": []
+  },
+  {
+    "id": "story:traavyanaya-zapadyonka",
+    "type": "story",
+    "title": "Травяная западёнка",
+    "year": 1940,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Щегарь Яшка Зорко сватается к Усте, дочери вдовы Шаврихи; путь к малахиту открывается тому, кто ходит к берёзе близ Климинского рудника в ночи наливания трав.",
+    "motifs": ["малахит", "травяная западёнка", "приворот", "рудник"],
+    "characters": ["char:yashka-zorko", "char:ustya-solovishna", "char:shavrikha"],
+    "places": ["place:kliminsky-rudnik"]
+  },
+  {
+    "id": "story:tayutkino-zerkalitse",
+    "type": "story",
+    "title": "Таюткино зеркальце",
+    "year": 1941,
+    "collection": "Малахитовая шкатулка",
+    "summary": "В забое пошла руда со шлифом — горняки решают, что Хозяйка разбила зеркало; дочка Гани Зари Таютка находит зеркальце и отводит от людей обвал.",
+    "motifs": ["крепь", "зеркало хозяйки", "обвал", "рудник"],
+    "characters": ["char:ganya-zarya", "char:tayutka", "char:khozyayka-mednoy-gory"],
+    "places": []
+  },
+  {
+    "id": "story:serebryanoe-kopyttse",
+    "type": "story",
+    "title": "Серебряное копытце",
+    "year": 1938,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Старик Кокованя берёт на воспитание девочку Дарёнку; волшебный козёл Серебряное копытце топает копытцем и насыпает самоцветы, а кошка Мурёнка пугает его — и чудо исчезает.",
+    "motifs": ["серебряное копытце", "самоцветы", "золото", "камнерез"],
+    "characters": [
+      "char:kokovanya",
+      "char:darenka",
+      "char:muryonka",
+      "char:serebryanoe-kopyttse"
+    ],
+    "places": []
+  },
+  {
+    "id": "story:zhelezkovy-pokryshki",
+    "type": "story",
+    "title": "Железковы покрышки",
+    "year": 1942,
+    "collection": "Малахитовая шкатулка",
+    "summary": "Фаберже ищет для двора подарок без красного цвета; лучшие малахитовые камни оказываются у гумешевского самородка Евлампия Железка.",
+    "motifs": ["малахит", "Фаберже", "самородки", "царский подарок"],
+    "characters": ["char:evlampy-zhelezko", "char:faberge"],
+    "places": ["place:gumushevsky-rudnik"]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "place:mednaya-gora",
+    "type": "place",
+    "title": "Медная гора",
+    "prototype": "Медная гора у г. Полевской (урочище с камнем Прию-камень)",
+    "description": "Легендарная гора — владения Хозяйки Медной горы, где растут каменные цветы и хранится малахит.",
+    "stories": [
+      "story:mednoy-gory-khozyayka",
+      "story:prikazchikovy-podoshvy",
+      "story:sochnevy-kameshki",
+      "story:kamenny-tsvetok",
+      "story:gornyi-master",
+      "story:hrupkaya-vetochka",
+      "story:dve-yashcharki"
+    ]
+  },
+  {
+    "id": "place:krasnogorsky-rudnik",
+    "type": "place",
+    "title": "Красногорский рудник (Красногорка)",
+    "prototype": "Вымышленный рудник; связан с Медной горой у Полевской",
+    "description": "Рудник, где Степан встретил Хозяйку, а Ванька Сочень искал медные изумруды.",
+    "stories": ["story:mednoy-gory-khozyayka", "story:sochnevy-kameshki"]
+  },
+  {
+    "id": "place:gumushevsky-rudnik",
+    "type": "place",
+    "title": "Гумешевский рудник (Гуменская)",
+    "prototype": "Гумешевский рудник близ Полевской, турчаниновские времена",
+    "description": "Старый медный рудник: здесь работали Андрюха Солёный и самородок Железко; славится малахитовыми самородками.",
+    "stories": ["story:dve-yashcharki", "story:zhelezkovy-pokryshki"]
+  },
+  {
+    "id": "place:kliminsky-rudnik",
+    "type": "place",
+    "title": "Климинский рудник",
+    "prototype": "Рудник в уральской заводской округе",
+    "description": "Место близ берёзы, куда ходят в ночь наливания трав за малахитом («Травяная западёнка»).",
+    "stories": ["story:traavyanaya-zapadyonka"]
+  },
+  {
+    "id": "place:sinyushkin-well",
+    "type": "place",
+    "title": "Синюшкин колодец",
+    "prototype": "Легендарный лесной колодец",
+    "description": "Колодец в лесу, где живёт бабка Синюшка и по ночам показываются богатства.",
+    "stories": ["story:sinyushkin-kolodets"]
+  },
+  {
+    "id": "place:chusovaya-river",
+    "type": "place",
+    "title": "Река Чусовая",
+    "prototype": "Река Чусовая на Урале",
+    "description": "Владения Великого Полоза — змеиного духа, хозяина речных богатств.",
+    "stories": ["story:pro-velikogo-polozha"]
+  },
+  {
+    "id": "place:polevskoy",
+    "type": "place",
+    "title": "Полевской завод",
+    "prototype": "Посёлок/город Полевской (Свердловская область)",
+    "description": "Реальный центр бажовской сказовой округи: Медная гора, Гумешки, Полевской (Поляковский) рудник рядом.",
+    "stories": []
+  },
+  {
+    "id": "place:azov-gora",
+    "type": "place",
+    "title": "Гора Азов",
+    "prototype": "Гора Азов близ Полевской",
+    "description": "Реальная гора уральского заводского района, связанная с преданиями о самородках и рассказчиках-старожилах (Хмелинин).",
+    "stories": []
+  }
+]
