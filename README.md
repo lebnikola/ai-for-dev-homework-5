@@ -71,6 +71,23 @@ npx @modelcontextprotocol/inspector .venv/bin/python server.py   # интера�
 «Используя bazhov_context("самоцветы"), сочини новый сказ про Дарёнку: героиня, место,
 искушение богатством и мораль Бажова».
 
+## Логи / отладка
+
+Вся серверная отладка пишется в **stderr** (stdout занят JSON-RPC протоколом):
+
+- старт: загрузка и валидация `data/*.json` с количеством сущностей; при ошибке валидации — traceback;
+- каждый вызов инструмента: аргументы (`<-`) и итог с длительностью (`-> N results, M candidates (X ms)`);
+- ошибки инструментов логируются перед возвратом ошибки клиенту.
+
+Уровень настраивается переменной `BAZHOV_LOG_LEVEL` (по умолчанию `INFO`;
+`DEBUG` дополнительно пишет полный JSON каждого ответа):
+
+```bash
+BAZHOV_LOG_LEVEL=DEBUG .venv/bin/python server.py 2>server.log   # логи в файл
+npx @modelcontextprotocol/inspector .venv/bin/python server.py    # stderr сервера виден во вкладке Server output
+.venv/bin/python scripts/smoke_client.py                          # логи сервера проходят через его stderr
+```
+
 ## Тесты
 
 ```bash
