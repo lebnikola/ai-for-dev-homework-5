@@ -1,0 +1,10 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "bazhov-reference": {
+      "type": "local",
+      "command": ["/Users/nikola/projects/ai-for-dev/homework5/.venv/bin/python", "/Users/nikola/projects/ai-for-dev/homework5/server.py"],
+      "enabled": true
+    }
+  }
+}
