@@ -1,5 +1,6 @@
 import asyncio
 import json
+import os
 import sys
 
 from mcp import ClientSession, StdioServerParameters
@@ -15,7 +16,10 @@ EXPECTED_TOOLS = {
 
 async def main() -> None:
     params = StdioServerParameters(
-        command=sys.executable, args=["server.py"], cwd="."
+        command=sys.executable,
+        args=["server.py"],
+        cwd=".",
+        env={k: os.environ[k] for k in ("BAZHOV_LOG_LEVEL",) if k in os.environ},
     )
     async with stdio_client(params) as (read, write):
         async with ClientSession(read, write) as session:

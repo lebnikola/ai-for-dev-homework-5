@@ -6,25 +6,34 @@ MCP-сервер справочника по сказам П. П. Бажова: 
 
 ## Инструменты
 
-| Инструмент | Назначение |
-| --- | --- |
-| `bazhov_resolve(query, entity_type?)` | Поиск по названию/алиасу → `{results[], candidates[]}` |
-| `bazhov_get(id)` | Полная карточка с раскрытыми связями (characters/places/stories) |
-| `bazhov_search(keywords, entity_type?, year_from?, year_to?)` | Fuzzy-поиск по мотивам/описаниям; при промахе — `candidates` |
-| `bazhov_context(theme)` | Готовый пакет `{characters, places, stories, years, motifs}` для генерации |
+Краткая запись сущности — `{id, title, type, summary}`; у сказов в `summary` указан год:
+«Каменный цветок (1938)». Все инструменты возвращают JSON-объект, и он же дублируется в
+поле MCP-ответа `structuredContent`.
 
-Типы сущностей и id: `story:...`, `char:...`, `place:...`.
+| Инструмент | Назначение | Результат |
+| --- | --- | --- |
+| `bazhov_resolve(query, entity_type?)` | Поиск по названию и алиасам | `{results: [краткая], candidates: []}` |
+| `bazhov_search(keywords, entity_type?, year_from?, year_to?)` | Поиск по названию, алиасам, мотивам и описаниям; с годовым фильтром возвращаются только сказы | как у `bazhov_resolve` |
+| `bazhov_get(id)` | Полная карточка: все поля из `data/*.json`, связи `characters`/`places`/`stories` раскрыты в краткие записи | карточка сущности |
+| `bazhov_context(theme)` | Пакет фактов для нового сказа: начальные сущности из результатов поиска (при пустом `results` — из `candidates`) и их связанные персонажи, места и сказы | `{characters, places, stories, years, motifs}`, где списки — краткие записи |
+
+`results` отсортирован по релевантности, затем по названию. `candidates` (difflib, не более
+5) непустой только при пустом `results`. Допустимые `entity_type`: `story`, `character`,
+`place`; id при этом — `story:...`, `char:...`, `place:...`.
+
+Ошибки (неизвестный id, пустой запрос, неверный `entity_type`) приходят как tool-error с
+текстом сообщения об ошибке.
 
 ## Данные
 
 Локальные JSON в `data/` (без внешних API при runtime):
 
 - `data/stories.json` — 15 сказов (год, сборник, краткое содержание, мотивы)
-- `data/characters.json` — 27 героев (алиасы, описания, прототипы)
+- `data/characters.json` — 27 героев (алиасы, описания)
 - `data/places.json` — 8 мест (прототипы реальных уральских объектов)
 
 При старте сервер валидирует схемы и все `links[]`: несуществующий id → ошибка запуска.
-Поиск регистронезависимый, `ё` → `е`; опечатки лечатся списком `candidates` (difflib).
+Поиск регистронезависимый, `ё` → `е`.
 
 ## Установка
 
@@ -64,8 +73,8 @@ npx @modelcontextprotocol/inspector .venv/bin/python server.py   # интера�
    подошвы», «Сочневы камешки» и т. п.
 4. `bazhov_context("самоцветы")` → Кокованя, Дарёнка, Хозяйка, Серебряное копытце,
    места Красногорка/Медная гора, годы 1937–1938, мотивы.
-5. Опечатка: `bazhov_search("кокований")` → пустые `results` и `candidates`
-   (`char:kokovanya`, `char:muryonka`).
+5. Опечатка: `bazhov_search("кокований")` → `results: []`, `candidates`: `char:kokovanya`,
+   `char:muryonka`.
 
 Пример промпта для основной модели после получения контекста:
 «Используя bazhov_context("самоцветы"), сочини новый сказ про Дарёнку: героиня, место,
@@ -76,7 +85,7 @@ npx @modelcontextprotocol/inspector .venv/bin/python server.py   # интера�
 Вся серверная отладка пишется в **stderr** (stdout занят JSON-RPC протоколом):
 
 - старт: загрузка и валидация `data/*.json` с количеством сущностей; при ошибке валидации — traceback;
-- каждый вызов инструмента: аргументы (`<-`) и итог с длительностью (`-> N results, M candidates (X ms)`);
+- каждый вызов инструмента: аргументы (`<-`) и итог с длительностью (`-> ... (X ms)`);
 - ошибки инструментов логируются перед возвратом ошибки клиенту.
 
 Уровень настраивается переменной `BAZHOV_LOG_LEVEL` (по умолчанию `INFO`;
@@ -92,16 +101,17 @@ npx @modelcontextprotocol/inspector .venv/bin/python server.py    # stderr се�
 
 ```bash
 .venv/bin/python -m pytest -q              # юнит-тесты store (14 тестов)
-.venv/bin/python scripts/smoke_client.py   # stdio-клиент: 4 инструмента + structuredContent
+.venv/bin/python scripts/smoke_client.py   # сквозной прогон через stdio
 ```
 
 ## Структура проекта
 
 ```
-server.py            # MCPServer (mcp 2.x), 4 инструмента, stdio
-store.py             # загрузка data/*.json, валидация связей, fuzzy-поиск, context
-data/                # stories.json, characters.json, places.json
-tests/test_store.py  # юнит-тесты хранилища и поиска
+server.py                # MCPServer (mcp 2.x), stdio
+store.py                 # загрузка data/*.json, валидация связей, поиск, context
+data/                    # stories.json, characters.json, places.json
+tests/test_store.py      # юнит-тесты хранилища и поиска
 scripts/smoke_client.py  # сквозная проверка MCP-протокола
-AGENT_TASK.md        # спецификация реализации
+отчет.md                 # отчёт о выполнении ДЗ: критерии + ссылки на код
+AGENT_TASK.md            # спецификация реализации
 ```

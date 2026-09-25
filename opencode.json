@@ -6,5 +6,8 @@
       "command": ["/Users/nikola/projects/ai-for-dev/homework5/.venv/bin/python", "/Users/nikola/projects/ai-for-dev/homework5/server.py"],
       "enabled": true
     }
+  },
+  "watcher": {
+    "ignore": ["отчет.md", ".git/**"]
   }
 }
